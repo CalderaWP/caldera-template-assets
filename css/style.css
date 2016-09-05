@@ -595,6 +595,26 @@ label {
 .btn-green:hover, .caldera-grid button:hover, .caldera-grid html input[type=button]:hover, .caldera-grid input[type=reset]:hover, .caldera-grid input[type=submit]:hover{
 	background: #ff7e30;
 }
+
+.btn-orange{
+	background: #ff7e30;
+	color: #ffffff !important;
+	border-color: #a3bf61;
+	padding: 16px 25px;
+	height: 3.5em;
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	white-space: nowrap;
+	letter-spacing: 0.35em;
+	font-size: 17px;
+	margin-top: 50px;
+}
+.btn-orange:hover{
+	background: #a3bf61;
+	border-color: #ff7e30;
+}
 .pre-footer{
 	background: #3a3a3c;
 	padding: 20px 0px;
