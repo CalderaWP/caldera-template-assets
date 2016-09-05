@@ -44,8 +44,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="caldera-globe-logo-sm.png" pinned="false" current-in-tab="true">
+      <file leaf-file-name="caldera-globe-logo-sm.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/images/caldera-globe-logo-sm.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="594" column="168" selection-start-line="594" selection-start-column="168" selection-end-line="594" selection-end-column="168" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="caldera-globe-logo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/caldera-globe-logo.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -58,6 +75,7 @@
       <list>
         <option value="$PROJECT_DIR$/dandelion.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -214,15 +232,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1473023494319</updated>
-      <workItem from="1473023495680" duration="4437000" />
+      <workItem from="1473023495680" duration="5487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4437000" />
+    <option name="totallyTimeSpent" value="5487000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="42" width="1244" height="754" extended-state="1" />
+    <frame x="10" y="42" width="1244" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24958402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -306,6 +324,19 @@
     <entry file="file://$PROJECT_DIR$/images/caldera-globe-logo-sm.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/caldera-globe-logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="594" column="168" selection-start-line="594" selection-start-column="168" selection-end-line="594" selection-end-column="168" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

@@ -574,10 +574,10 @@ body.is-touch .tiles article .content {
 	font-weight: 300 !important;
 }
 label {
-    color: #c9c9c9;
+    color: #000;
     font-weight: 300;
 }
-.btn-green{
+.btn-green, .caldera-grid button, .caldera-grid html input[type=button], .caldera-grid input[type=reset], .caldera-grid input[type=submit]{
     background: #a3bf61;
     color: #ffffff !important;
     border-color: #a3bf61;
@@ -592,7 +592,7 @@ label {
 	font-size: 17px;
 	margin-top: 50px;  
 }
-.btn-green:hover{
+.btn-green:hover, .caldera-grid button:hover, .caldera-grid html input[type=button]:hover, .caldera-grid input[type=reset]:hover, .caldera-grid input[type=submit]:hover{
 	background: #ff7e30;
 }
 .pre-footer{
@@ -1006,4 +1006,12 @@ span.image.main img {
 	max-width: 1140px;
 	height: auto;
 	width: 100%;
+}
+
+button.navbar-toggle {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #ff7e30
 }
