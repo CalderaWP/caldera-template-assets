@@ -343,6 +343,8 @@ header{
     -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
     transition: transform 0.5s ease, opacity 0.5s ease;
     position: relative;
+	height: 322px;
+	overflow: hidden;
 }
 .tiles article > .image {
     -moz-transition: -moz-transform 0.5s ease;
