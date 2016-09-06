@@ -1049,3 +1049,12 @@ button.navbar-toggle {
 .logo_only header {
 	background-color: #fff;
 }
+
+/** Keep these at the bottom to make sure we don't end up with transparent backgrounds **/
+a.btn.btn-green, a.btn {
+	background-color: #a3bf61;
+}
+
+a.btn.btn-orange {
+	background-color: #ff7e30;
+}
