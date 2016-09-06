@@ -1045,3 +1045,7 @@ button.navbar-toggle {
 	width: 1px;
 	overflow: hidden;
 }
+
+.logo_only header {
+	background-color: #fff;
+}
