@@ -1058,3 +1058,7 @@ a.btn.btn-green, a.btn {
 a.btn.btn-orange {
 	background-color: #ff7e30;
 }
+
+.mini-view {
+	width: 100%;
+}
