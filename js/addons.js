@@ -1,4 +1,4 @@
-var cfAddons = angular.module('cf-addons', ['ui.router', 'ngResource' ]);
+var cfAddons = angular.module('cf-addons', ['ui.router', 'ngResource', 'ngSanitize' ]);
 
 cfAddons.config(function($stateProvider, $urlRouterProvider) {
     var template = jQuery( '#cf-addon-template' ).html();
@@ -41,7 +41,7 @@ cfAddons.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/all")
 });
 
-cfAddons.controller( 'addons', ['$scope', 'addonsAPI', '$state', function($scope, addonsAPI, $state ) {
+cfAddons.controller( 'addons', ['$scope', 'addonsAPI', '$state', '$sce', function($scope, addonsAPI, $state, $sce ) {
     $scope.addons = addonsAPI.get( { type: $state.current} );
     $scope.trustAsHtml = $sce.trustAsHtml;
 }]);
