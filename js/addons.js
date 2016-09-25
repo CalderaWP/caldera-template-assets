@@ -43,6 +43,7 @@ cfAddons.config(function($stateProvider, $urlRouterProvider) {
 
 cfAddons.controller( 'addons', ['$scope', 'addonsAPI', '$state', function($scope, addonsAPI, $state ) {
     $scope.addons = addonsAPI.get( { type: $state.current} );
+    $scope.trustAsHtml = $sce.trustAsHtml;
 }]);
 
 
