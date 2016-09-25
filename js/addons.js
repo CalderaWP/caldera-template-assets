@@ -1,6 +1,6 @@
 var cfAddons = angular.module('cf-addons', ['ui.router', 'ngResource' ]);
 
-cfAddons.config(function($stateProvider) {
+cfAddons.config(function($stateProvider, $urlRouterProvider) {
     var template = jQuery( '#cf-addon-template' ).html();
 
     $stateProvider.state({
