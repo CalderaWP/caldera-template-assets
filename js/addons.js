@@ -7,56 +7,44 @@ cfAddons.config(function($stateProvider, $urlRouterProvider) {
         name: 'all',
         url: '/all',
         template: template,
-        //templateUrl: 'templates/cf-addons.html',
-        controller: 'all'
+        controller: 'addons'
     });
 
     $stateProvider.state({
         name: 'email',
         url: '/email',
         template: template,
-        controller: 'email'
+        controller: 'addons'
     });
 
     $stateProvider.state({
         name: 'tools',
         url: '/tools',
         template: template,
-        controller: 'tools'
+        controller: 'addons'
     });
 
     $stateProvider.state({
         name: 'free',
         url: '/free',
         template: template,
-        controller: 'free'
+        controller: 'addons'
     });
 
     $stateProvider.state({
         name: 'payment',
         url: '/payment',
         template: template,
-        controller: 'payment'
+        controller: 'addons'
     });
 
     $urlRouterProvider.otherwise("/all")
 });
 
-cfAddons.controller('all', ['$scope', 'addonsAPI', function($scope,addonsAPI) {
-    $scope.addons = addonsAPI.get( { type:'all'} );
+cfAddons.controller( 'addons', ['$scope', 'addonsAPI', '$state', function($scope, addonsAPI, $state ) {
+    $scope.addons = addonsAPI.get( { type:state.current} );
 }]);
-cfAddons.controller('email', ['$scope', 'addonsAPI', function($scope,addonsAPI) {
-    $scope.addons = addonsAPI.get( { type:'email'} );
-}]);
-cfAddons.controller('tools', ['$scope', 'addonsAPI', function($scope,addonsAPI) {
-    $scope.addons = addonsAPI.get( { type:'tools'} );
-}]);
-cfAddons.controller('free', ['$scope', 'addonsAPI', function($scope,addonsAPI) {
-    $scope.addons = addonsAPI.get( { type:'free'} );
-}]);
-cfAddons.controller('payment', ['$scope', 'addonsAPI', function($scope,addonsAPI) {
-    $scope.addons = addonsAPI.get( { type:'payment'} );
-}]);
+
 
 cfAddons.factory( 'addonsAPI', function($resource){
     return $resource( 'https://calderawp.com/wp-json/calderawp_api/v2/products/cf-addons?category=:type', {
