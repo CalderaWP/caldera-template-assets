@@ -48,7 +48,7 @@ cfAddons.controller( 'addons', ['$scope', 'addonsAPI', '$state', '$sce', functio
 
 
 cfAddons.factory( 'addonsAPI', function($resource){
-    return $resource( 'https://calderawp.com/wp-json/calderawp_api/v2/products/cf-addons?category=:type', {
+    return $resource( 'http://54.197.87.54/wp-json/calderawp_api/v2/products/cf-addons?category=:type', {
         type: 'all'
     });
 });
