@@ -874,10 +874,6 @@ a:hover {
   opacity: 0.25; }
 
 input[type="checkbox"], input[type="radio"] {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
   display: block;
   float: left;
   margin-right: -2em;
