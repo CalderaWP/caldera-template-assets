@@ -42,7 +42,10 @@ cfAddons.config(function($stateProvider, $urlRouterProvider) {
 });
 
 cfAddons.controller( 'addons', ['$scope', 'addonsAPI', '$state', '$sce', function($scope, addonsAPI, $state, $sce ) {
-    $scope.addons = addonsAPI.get( { type:$state.current.name } );
+    $scope.addons = addonsAPI.get( { 
+        type:$state.current.name,
+        per_page: 50
+    } );
     $scope.trustAsHtml = $sce.trustAsHtml;
 }]);
 
